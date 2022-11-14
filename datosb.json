@@ -1,0 +1,147 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "director": [
+        "Hugh Hudson"
+      ],
+      "distribuidora": "20th Century Fox",
+      "duracion": 97,
+      "genero": [
+        "Drama"
+      ],
+      "imagen": "/images/altamira.jpg",
+      "pais": "España",
+      "reparto": [
+        "Antonio Banderas ",
+        "Golshifteh Farahani ",
+        "Nicholas Farrell ",
+        "Henry Goodman "
+      ],
+      "titulo": "Altamira",
+      "sipnosis": "Centrada a finales del siglo XIX, este largometraje se centra en un padre, Marcelino, un arqueólogo aficionado que junto a su hija de 9 años descubren algo que provocará un cambio en la visión que se tenía de la historia de la humanidad hasta la fecha: unas pinturas prehistóricas dentro de unas cuevas de las colinas de Santander que, posteriormente, se conocerían como las cuevas de Altamira.",
+      "year": 2015
+    },
+    {
+      "id": 2,
+      "director": [
+        "Zack Snyder"
+      ],
+      "distribuidora": "Warner Bros Pictures",
+      "duracion": 151,
+      "genero": [
+        "Acción ",
+        "Fantasía ",
+        "Aventura "
+      ],
+      "imagen": "/images/batmansuperman.jpg",
+      "pais": "EE.UU",
+      "reparto": [
+        "Henry Cavill ",
+        "Ben Affleck ",
+        "Gal Gadot ",
+        "Amy Adams "
+      ],
+      "sipnosis": "Tras los sucesos acaecidos en 'El Hombre de Acero', donde la Tierra sufrió la ira de los enemigos de Superman (Henry Cavill) con muertes y destrucción, una parte de la sociedad tildará al superhéroe de amenaza. Entre ellos estará el otro gran protagonista del film, Batman, al que interpretará por primera vez el actor Ben Affleck.",
+      "titulo": "Batman v Superman: Dawn of Justice",
+      "year": 2016
+    },
+    {
+      "id": 3,
+      "director": [
+        "Dan Trachtenberg"
+      ],
+      "distribuidora": "Paramount Pictures",
+      "duracion": 103,
+      "genero": [
+        "Thriller ",
+        "Misterio ",
+        "Ciencia ficción "
+      ],
+      "imagen": "/images/callecloverfield.jpg",
+      "pais": "EE.UU",
+      "reparto": [
+        "Mary Elizabeth Winstead ",
+        "John Goodman ",
+        "John Gallagher Jr. ",
+        "Bradley Cooper "
+      ],
+      "sipnosis": "Una mujer tiene un accidente de coche, y cuando se recupera, ve que está encerrada en un sótano junto a un hombre mayor y otro joven. El más mayor le informa que el mundo ha sufrido un cataclismo y la Tierra se ha vuelto inhabitable. Sin embargo, la mujer no le cree y hará todo lo posible por encontrar una salida.",
+      "titulo": "Calle Cloverfield 10",
+      "year": 2016
+    },
+    {
+      "id": 4,
+      "director": [
+        "Rudi Rosenberg"
+      ],
+      "distribuidora": "Karma Films",
+      "duracion": 81,
+      "genero": [
+        "Comedia ",
+        "Familiar "
+      ],
+      "imagen": "/images/elnovato.jpg",
+      "pais": "Francia",
+      "reparto": [
+        "Réphael Ghrenassia ",
+        "Joshua Raccah ",
+        "Géraldine Martineau ",
+        "Guillaume Cloud-Roussel "
+      ],
+      "sipnosis": "Benoit, un niño de 14 años acaba de mudarse junto a sus padres y su tío al centro de París. La primera semana de colegio es más complicada de lo que esperaba, no encuentra amigos, se siente marginado, y además el grupo de chicos populares liderados por Charles, se burla de él. ",
+      "titulo": "El novato",
+      "year": 2015
+    },
+    {
+      "id": 5,
+      "director": [
+        "Jennifer Yuh ",
+        "Alessandro Carloni "
+      ],
+      "distribuidora": "20th Century Fox",
+      "duracion": 95,
+      "genero": [
+        "Animación ",
+        "Acción ",
+        "Aventura "
+      ],
+      "imagen": "/images/kungfupanda.jpg",
+      "pais": "EE.UU",
+      "reparto": [
+        "Florentino Fernández ",
+        "Angelina Jolie ",
+        "Dustin Hoffman "
+      ],
+      "sipnosis": "Po vivirá una nueva aventura en la que tendrá que volver a demostrar sus dotes en el arte del kung-fu que ya ha ido perfeccionando en los anteriores proyectos. La historia de esta tercera entrega se centra en la misión que tendrá que emprender Po para vencer a un villano sobrenatural que intentará destruir toda China y a todos los maestros de artes marciales.",
+      "titulo": "Kung Fu Panda 3",
+      "year": 2016
+    },
+    {
+      "id": 6,
+      "director": [
+        "Rich Moore ",
+        "Byron Howard ",
+        "Jared Bush "
+      ],
+      "distribuidora": "Walt Disney Studios Motion Picture",
+      "duracion": 100,
+      "genero": [
+        "Animación ",
+        "Familiar ",
+        "Aventura "
+      ],
+      "imagen": "/images/zootropolis.jpg",
+      "pais": "EE.UU",
+      "reparto": [
+        "Ginnifer Goodwin ",
+        "Jason Bateman ",
+        "Idris Elba "
+      ],
+      "sipnosis": "Este nuevo largometraje narra las aventuras de Judy Hopps (a la que da voz Ginnifer Goodwin), una conejita que quiere ser policía a toda costa y triunfar como agente de la ley en una ciudad en la que los delincuentes pueden tener el doble de su tamaño, ya que en Zootrópolis conviven todo tipo de animales, desde invertebrados e insectos así como mamíferos y reptiles.",
+      "titulo": "Zootrópolis",
+      "valoracion": 5,
+      "year": 2016
+    }
+  ]
+}
