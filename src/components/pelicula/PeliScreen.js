@@ -31,7 +31,7 @@ export default function PeliScreen({ peliculas, setPeliculas }) {
     } = pelicula;
 
     return (
-        <div className="row mt-5">
+        <div className="row mt-5 mb-5">
             <div className="col-4">
                 <img
                     src={imagen}
@@ -52,7 +52,7 @@ export default function PeliScreen({ peliculas, setPeliculas }) {
                 </ul>
                 <h5 className="mt-3">Sipnosis</h5>
                 <p>{sipnosis}</p>
-                <div type="button" className="btn btn-outline-info">
+                <div type="button" className="btn btn-outline-info me-5">
                     <Link to="/">Regresar</Link>
                 </div>
                 <button

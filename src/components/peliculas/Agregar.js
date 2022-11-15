@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 
-const Agregar = ({setPeliculas, peliculas}) => {
+const Agregar = ({ setPeliculas, peliculas }) => {
 
     const navigate = useNavigate();
 
@@ -19,15 +19,15 @@ const Agregar = ({setPeliculas, peliculas}) => {
 
 
     const agregar = async () => {
-        if (director && 
-            distribuidora && 
-            duracion && 
-            genero && 
-            imagen && 
-            pais && 
-            titulo && 
-            reparto && 
-            sipnosis && 
+        if (director &&
+            distribuidora &&
+            duracion &&
+            genero &&
+            imagen &&
+            pais &&
+            titulo &&
+            reparto &&
+            sipnosis &&
             year) {
             await axios.post('http://localhost:5000/peliculas', {
                 director,
@@ -41,76 +41,20 @@ const Agregar = ({setPeliculas, peliculas}) => {
                 sipnosis,
                 year
             })
-            .then(peli => setPeliculas([...peliculas,peli.data]))
+                .then(peli => setPeliculas([...peliculas, peli.data]))
             navigate('/')
         }
     }
 
     return (
-        <div className="agregarP me-auto ms-auto">
+        <div className=" d-flex flex-column agregarP me-auto ms-auto">
             <div className="m-3">
-             <Link  to='/peliculas' >Volver a Peliculas</Link>
+                <Link to='/peliculas' >Volver a Peliculas</Link>
             </div>
-            <h1>Nueva Pelicula</h1>
-            <fieldset>
-                <form>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Director</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            onChange={(e) => setDirector(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Distribuidora</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            onChange={(e) => setDistribuidora(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Duracion</label>
-                        <input
-                            type="number"
-                            className="form-control"
-                            onChange={(e) => setDuracion(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Genero</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            onChange={(e) => setGenero(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Imagen URL</label>
-                        <input
-                            type="url"
-                            className="form-control"
-                            onChange={(e) => setImagen(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Pais de Origen</label>
-                        <input
-                            type="url"
-                            className="form-control"
-                            onChange={(e) => setPais(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Reparto</label>
-                        <input
-                            type="text"
-                            className="form-control"
-                            onChange={(e) => setPeparto(e.target.value)}
-                        />
-                    </div>
-                    <div className="form-group">
+            <h1 className="title">Nueva Pelicula</h1>
+            <fieldset className='me-auto ms-auto'>
+                <form className='row g-3'>
+                <div className="form-group col-md-6">
                         <label className="form-label mt-4">Titulo</label>
                         <input
                             type="text"
@@ -118,15 +62,55 @@ const Agregar = ({setPeliculas, peliculas}) => {
                             onChange={(e) => setTitulo(e.target.value)}
                         />
                     </div>
-                    <div className="form-group">
-                        <label className="form-label mt-4">Sipnosis</label>
+                    <div className="form-group col-12">
+                        <label className="form-label mt-4">Imagen URL</label>
+                        <input
+                            type="url"
+                            className="form-control"
+                            onChange={(e) => setImagen(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group col-md-6">
+                        <label className="form-label mt-4">Director</label>
                         <input
                             type="text"
                             className="form-control"
-                            onChange={(e) => setSipnosis(e.target.value)}
+                            onChange={(e) => setDirector(e.target.value)}
                         />
                     </div>
-                    <div className="form-group">
+                    <div className="form-group col-md-6">
+                        <label className="form-label mt-4">Distribuidora</label>
+                        <input
+                            type="text"
+                            className="form-control "
+                            onChange={(e) => setDistribuidora(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group col-md-2">
+                        <label className="form-label mt-4">Duracion</label>
+                        <input
+                            type="number"
+                            className="form-control"
+                            onChange={(e) => setDuracion(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group col-md-6">
+                        <label className="form-label mt-4">Genero</label>
+                        <input
+                            type="text"
+                            className="form-control"
+                            onChange={(e) => setGenero(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group col-md-4">
+                        <label className="form-label mt-4">Pais de Origen</label>
+                        <input
+                            type="url"
+                            className="form-control"
+                            onChange={(e) => setPais(e.target.value)}
+                        />
+                    </div>
+                    <div className="form-group col-md-2">
                         <label className="form-label mt-4">Año</label>
                         <input
                             type="number"
@@ -134,17 +118,35 @@ const Agregar = ({setPeliculas, peliculas}) => {
                             onChange={(e) => setYear(e.target.value)}
                         />
                     </div>
+                    <div className="form-group col-12">
+                        <label className="form-label mt-4">Reparto</label>
+                        <textarea
+                            type="text"
+                            className="form-control"
+                            onChange={(e) => setPeparto(e.target.value)}
+                        />
+                    </div>
+                    
+                    <div className="form-group col-12">
+                        <label className="form-label mt-4">Sipnosis</label>
+                        <textarea
+                            type="text"
+                            className="form-control"
+                            onChange={(e) => setSipnosis(e.target.value)}
+                        />
+                    </div>
+                    <div className="d-flex flex-column mb-3">
+                        <button
+                            type="submit"
+                            className="btn btn-primary mt-3"
+                            onClick={agregar}
+                        >
+                            Agregar Pelicula
+                        </button>
+                    </div>
                 </form>
             </fieldset>
-            <div className="d-flex flex-column">
-                <button
-                    type="submit"
-                    className="btn btn-primary mt-3"
-                    onClick={agregar}
-                >
-                    Agregar Pelicula
-                </button>
-            </div>
+
         </div>
     )
 }
